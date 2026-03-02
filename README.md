@@ -1,13 +1,64 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tKcvRIn3)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22907234&assignment_repo_type=AssignmentRepo)
-# Desenvolvimento_TCC
-Repositório padrão para inicio do desenvovimento de TCC
+# 🚲 GeoBike - Mobilidade Urbana P2P
 
-Ênfase no acompanhamento e desenvolvimento do projeto de TCC 1 (proposta) e 2 (aplicação.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white)](https://www.mapbox.com/)
+[![Acessibilidade](https://img.shields.io/badge/VLibras-Acessível-blue)](https://www.gov.br/governodigital/pt-br/vlibras)
 
-Prezado alunos(as), Tudo bem?
+## 📋 Sobre o Projeto
 
-A partir de agora o acompanhamento do desenvolvimento de seu TCC 1 ou 2 será tanto em sala de aula como aqui, com o uso deste recurso. Vocês devem fazer um desenvolvimento contínuo, respeitando as datas das entregas previstas por seu professor.
+O **GeoBike** é uma plataforma de economia compartilhada focada em mobilidade urbana sustentável. O objetivo é conectar proprietários de bicicletas (Locadores) a pessoas que precisam de um meio de transporte ágil (Locatários), eliminando intermediários através do modelo **P2P (Peer-to-Peer)**.
 
-## Atenção!
-Este arquivo deve ser alterado no decorrer do desenvolvimento de seu TCC.
+> Este projeto é o **Trabalho de Conclusão de Curso (TCC)** do Bacharelado em Sistemas de Informação no **Centro Universitário Senac**.
+
+
+
+## ✨ Funcionalidades do MVP
+
+* **Geolocalização em Tempo Real:** Mapa interativo via Mapbox API para localização precisa de ativos e usuários.
+* **Acessibilidade Nativa:** Integração com a API do **VLibras** para garantir inclusão digital.
+* **Dashboard de Impacto:** Monitoramento de indicadores sustentáveis alinhados aos ODS 11, 12 e 13 da ONU.
+* **Interface Responsiva:** UX otimizada para Desktop e Mobile, com tipografia Poppins e design moderno.
+
+## 🚀 Tecnologias e APIs
+
+* **Frontend:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/).
+* **Geoprocessamento:** [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/).
+* **Acessibilidade:** [Widget VLibras](https://www.vlibras.gov.br/).
+* **Mobile:** Estrutura pronta para **P2P PWA** (Progressive Web App).
+
+## 🛠️ Como Executar o Projeto Localmente
+
+1.  **Clone este repositório:**
+    ```bash
+    git clone [https://github.com/TCC-CAS/tcc-2026-1-e-2-geobike.git](https://github.com/TCC-CAS/tcc-2026-1-e-2-geobike.git)
+    ```
+
+2.  **Entre na pasta do projeto:**
+    ```bash
+    cd geobike/geobike
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Execute em modo de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+
+
+## 👥 Equipe GeoBike
+
+| Integrante | Função Principal |
+| :--- | :--- |
+| **Luisa Aquino** | 
+| **Maria Erica** | 
+| **Paulo Henrique** | 
+---
+
+### 🏛️ Instituição
+**Centro Universitário Senac** Bacharelado em Sistemas de Informação — 2026.
