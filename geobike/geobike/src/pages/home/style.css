@@ -1,0 +1,1148 @@
+/* Definição das cores principais do projeto GeoBike */
+:root {
+  --cor-fundo: #F4FAFC;
+  --cor-turquesa: #009CA6;
+  --cor-laranja: #E87A00;
+  --cor-azul-escuro: #003B46;
+  --cor-texto: #4A5568;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Reset básico e fundo da página */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff 40%, #D8F0F6 100%);
+  min-height: 100vh;
+}
+
+/* --- SEÇÃO HOME --- */
+
+.geobike-wrapper {
+  width: 100%;
+}
+
+.primeira-tela {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F7F6F5 0%, rgba(12, 155, 188, 0.15) 100%);
+}
+
+/* Navegação Superior */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+
+.logo-container {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-azul-escuro);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-comecar {
+  background-color: var(--cor-laranja);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Área Principal (Hero) */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5% 5rem 5%;
+  flex-grow: 1;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.badge {
+  background-color: #E6F4F1;
+  color: var(--cor-turquesa);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: var(--cor-azul-escuro);
+  line-height: 1.1;
+  margin: 1.5rem 0;
+}
+
+.highlight-text {
+  color: var(--cor-turquesa);
+  border-bottom: 4px solid var(--cor-laranja);
+}
+
+.hero-description {
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 85%;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--cor-turquesa);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--cor-azul-escuro);
+  border: 2px solid var(--cor-azul-escuro);
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Ilustração e Mockup Temporário */
+.hero-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mockup-card {
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px; /* Largura proporcional ao seu design do Figma */
+  box-shadow: 0 20px 40px rgba(0, 156, 166, 0.08);
+  /* Centraliza o card na área da direita */
+  margin: auto;
+}
+
+.mockup-mapa {
+  background: #EAF6F8;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-turquesa);
+  margin-bottom: 1rem;
+  border: 2px dashed #B8E0D2;
+}
+
+.mockup-stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--cor-texto);
+}
+
+.mockup-stats strong {
+  font-size: 1.2rem;
+  color: var(--cor-azul-escuro);
+}
+
+/* Barra Escura Inferior (Ticker) */
+.ticker-bar {
+  background-color: var(--cor-azul-escuro);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* --- SEÇÃO BENEFÍCIOS --- */
+.beneficios-container {
+  padding: 6rem 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.beneficios-header {
+  margin-bottom: 4rem;
+}
+
+.beneficios-subtitle {
+  color: var(--cor-laranja);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.beneficios-header h2 {
+  font-size: 3rem;
+  color: var(--cor-azul-escuro);
+  line-height: 1.2;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Importante para não amassar no celular */
+}
+
+.beneficio-card {
+  background: #F9FDFE; /* Um tom super claro de azul/cinza para destacar no fundo branco */
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  /* Sombra bem suave para dar profundidade */
+  box-shadow: 0 10px 30px rgba(0, 156, 166, 0.05); 
+  transition: transform 0.3s ease;
+}
+
+/* Efeito legal: o cartão levanta um pouquinho quando o mouse passa por cima */
+.beneficio-card:hover {
+  transform: translateY(-5px); 
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-icon {
+  background: #EAF6F8;
+  color: var(--cor-turquesa);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.card-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #EAF6F8; /* Cor bem clara para simular o efeito da sua imagem */
+  line-height: 1;
+}
+
+.beneficio-card h3 {
+  color: var(--cor-azul-escuro);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.beneficio-card p {
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* --- SEÇÃO COMO FUNCIONA --- */
+.processo-container {
+  padding: 6rem 5%;
+  background-color: #FAFCFD; /* Fundo um pouquinho diferente do branco para destacar */
+}
+
+.processo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.processo-texto {
+  flex: 1; /* Faz o texto ocupar metade do espaço */
+}
+
+.processo-subtitle {
+  color: var(--cor-laranja);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.processo-texto h2 {
+  font-size: 3rem;
+  color: var(--cor-azul-escuro);
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.passos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+}
+
+/* A linha vertical mágica conectando os números */
+.passos-lista::before {
+  content: '';
+  position: absolute;
+  left: 19px; /* Posiciona a linha exatamente no meio do círculo */
+  top: 10px;
+  bottom: 20px;
+  width: 2px;
+  background-color: #B8E0D2;
+  z-index: 1;
+}
+
+.passo-item {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2; /* Garante que os números fiquem por cima da linha */
+}
+
+.passo-numero {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-turquesa);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0; /* Impede que o círculo seja esmagado pelo texto */
+}
+
+.passo-detalhe h3 {
+  color: var(--cor-azul-escuro);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.passo-detalhe p {
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- MOCKUP DO CELULAR --- */
+.processo-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.celular-mockup {
+  width: 320px;
+  background-color: white;
+  /* A borda grossa simula a carcaça do celular */
+  border: 14px solid var(--cor-azul-escuro); 
+  border-radius: 45px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.celular-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--cor-azul-escuro);
+}
+
+.status-vivo {
+  color: var(--cor-laranja);
+  font-size: 0.8rem;
+}
+
+.celular-mapa {
+  background-color: #EAF6F8;
+  height: 280px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pino-mapa {
+  font-size: 3rem;
+  filter: drop-shadow(0 5px 5px rgba(232, 122, 0, 0.3)); /* Sombra laranja no pino */
+}
+
+.info-flutuante {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--cor-texto);
+  position: absolute;
+  bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.celular-card-bike {
+  background: white;
+  border: 1px solid #EAF6F8;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bike-icone {
+  background: #EAF6F8;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.bike-info strong {
+  display: block;
+  color: var(--cor-azul-escuro);
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.bike-info span {
+  color: var(--cor-texto);
+  font-size: 0.75rem;
+}
+
+.celular-btn {
+  background-color: var(--cor-turquesa);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.celular-btn:hover {
+  background-color: #00828A;
+}
+
+/* --- BARRA DE DADOS --- */
+.barra-dados-container {
+  background-color: var(--cor-azul-escuro);
+  padding: 5rem 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.barra-dados-grid {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  /* Um fundo sutilmente mais claro que o azul escuro usando 5% de branco */
+  background-color: rgba(255, 255, 255, 0.03); 
+}
+
+.dado-item {
+  flex: 1; /* Faz as 4 caixas terem exatamente a mesma largura */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Cria as divisórias com uma linha branca quase transparente */
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Remove a linha da última caixa para não sobrar borda na direita */
+.dado-item:last-child {
+  border-right: none;
+}
+
+.dado-item p {
+  color: #B8E0D2; /* Um tom de verde/azul bem claro e suave */
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- SEÇÃO PROTAGONISTAS --- */
+.protagonistas-container {
+  padding: 6rem 5%;
+  background-color: #ffffff;
+}
+
+.protagonistas-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.protagonistas-texto {
+  flex: 1; /* Ocupa metade da tela */
+}
+
+.protagonistas-subtitle {
+  color: var(--cor-laranja);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.protagonistas-texto h2 {
+  font-size: 3rem;
+  color: var(--cor-azul-escuro);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.protagonistas-texto p {
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+/* Estilo das Tags (P2P, B2C, SIG) */
+.tags-grupo {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.tag-item strong {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.tag-item span {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.tag-azul {
+  background-color: #EAF6F8;
+  color: var(--cor-turquesa);
+}
+
+.tag-laranja {
+  background-color: #FDF3E9;
+  color: var(--cor-laranja);
+}
+
+.tag-verde {
+  background-color: #EAF8F1;
+  color: #00A676; /* Tom esverdeado para a tag SIG */
+}
+
+/* Estilo dos Cartões da Direita */
+.protagonistas-cards {
+  flex: 1; /* Ocupa a outra metade da tela */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.protagonista-card {
+  background-color: #F8FAFB; /* Fundo cinza/azulado bem claro */
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+}
+
+.protagonista-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icone-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bg-azul {
+  background-color: #EAF6F8;
+}
+
+.bg-laranja {
+  background-color: #FDF3E9;
+}
+
+.protagonista-card h3 {
+  color: var(--cor-azul-escuro);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.protagonista-card p {
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista de benefícios com o check verde/turquesa */
+.beneficios-lista {
+  list-style: none; /* Remove a bolinha padrão do HTML */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.beneficios-lista li {
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.check {
+  color: var(--cor-turquesa);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* --- SEÇÃO IMPACTO AMBIENTAL --- */
+.impacto-container {
+  padding: 6rem 5%;
+  background-color: var(--cor-azul-escuro);
+  color: white;
+}
+
+.impacto-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.impacto-texto {
+  flex: 1;
+}
+
+.impacto-subtitle {
+  color: var(--cor-laranja);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.impacto-texto h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.highlight-verde {
+  color: var(--cor-turquesa);
+}
+
+.impacto-texto p {
+  color: #B8E0D2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+/* Tags dos Objetivos da ONU */
+.ods-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ods-tag {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #EAF6F8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Grade de Cartões Estatísticos */
+.impacto-cards-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-estatistica {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-full {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-half {
+  width: calc(50% - 0.75rem);
+}
+
+.icone-verde {
+  font-size: 2.5rem;
+  color: var(--cor-turquesa);
+}
+
+.card-estatistica strong {
+  font-size: 2.5rem;
+  color: var(--cor-turquesa);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.card-estatistica span {
+  color: #B8E0D2;
+  font-size: 0.9rem;
+}
+
+.estatistica-info strong {
+  margin-bottom: 0.2rem;
+}
+
+/* --- SEÇÃO CALL TO ACTION (CTA) --- */
+.cta-container {
+  padding: 6rem 5%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-conteudo {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-subtitle {
+  color: var(--cor-laranja);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cta-conteudo h2 {
+  font-size: 3.5rem;
+  color: var(--cor-azul-escuro);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-turquesa {
+  color: var(--cor-turquesa);
+}
+
+.cta-conteudo p {
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 80%;
+}
+
+.cta-botoes {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Ajustes específicos para os botões desta seção e o ícone de seta laranja */
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem; /* Botões um pouco maiores e mais atrativos aqui embaixo */
+}
+
+.icone-seta {
+  background-color: var(--cor-laranja);
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* --- SEÇÃO RODAPÉ (FOOTER) --- */
+.rodape-container {
+  background-color: var(--cor-azul-escuro);
+  color: white;
+  padding: 5rem 5% 2rem 5%;
+}
+
+.rodape-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* A primeira coluna é maior para caber o texto longo */
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil de divisão */
+}
+
+.logo-rodape {
+  margin-bottom: 1.5rem;
+}
+
+.texto-branco {
+  color: white;
+}
+
+.rodape-coluna.marca p {
+  color: #B8E0D2;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+.rodape-coluna h4 {
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.rodape-coluna a {
+  display: block;
+  color: #B8E0D2;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.rodape-coluna a:hover {
+  color: var(--cor-turquesa);
+}
+
+.rodape-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  font-size: 0.85rem;
+  color: #B8E0D2;
+}
+
+.rodape-tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.rodape-tags span {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Responsividade para Tablets e Celulares (Media Query) */
+@media (max-width: 768px) {
+  /* Reorganiza a navegação superior em duas linhas */
+  .navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 5%;
+  }
+
+  /* Permite que os links quebrem de linha se o celular for muito estreito */
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Muda a direção da área principal para empilhar texto e imagem */
+  .hero-container {
+    flex-direction: column;
+    padding: 2rem 5% 3rem 5%;
+    text-align: center;
+  }
+
+  /* Ocupa toda a largura disponível e adiciona margem inferior */
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  /* Centraliza a tag (badge) no modo mobile */
+  .badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  /* Reduz o tamanho do título para caber na tela */
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  /* Centraliza o parágrafo explicativo */
+  .hero-description {
+    max-width: 100%;
+    margin: 0 auto 2rem auto;
+  }
+
+  /* Empilha os botões e os estica para facilitar o clique */
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Garante que o cartão do mapa não estoure a tela */
+  .hero-illustration {
+    width: 100%;
+  }
+
+  /* Permite que as frases da barra inferior se ajustem sem criar rolagem */
+  .ticker-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* Ajustes da Barra de Dados para celular */
+  .barra-dados-container {
+    padding: 3rem 5%;
+  }
+
+  .barra-dados-grid {
+    flex-direction: column; /* Empilha as caixas verticalmente */
+  }
+
+  .dado-item {
+    border-right: none; /* Remove a divisória vertical */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Adiciona divisória horizontal */
+    padding: 2rem;
+  }
+
+  .dado-item:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+  }
+
+  /* Ajustes dos Protagonistas para celular */
+  .protagonistas-container {
+    padding: 4rem 5%;
+  }
+
+  .protagonistas-conteudo {
+    flex-direction: column; /* Coloca os cartões abaixo do texto principal */
+    gap: 3rem;
+  }
+
+  .protagonistas-texto h2 {
+    font-size: 2.2rem;
+  }
+
+  .tags-grupo {
+    justify-content: flex-start;
+  }
+
+  /* Ajustes da seção Impacto para celular */
+  .impacto-container {
+    padding: 4rem 5%;
+  }
+
+  .impacto-conteudo {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .impacto-texto h2 {
+    font-size: 2.5rem;
+  }
+
+  .card-half {
+    width: 100%; /* Faz os cartões pequenos ocuparem a largura toda no celular */
+  }
+
+  /* Ajustes da seção CTA para celular */
+  .cta-container {
+    padding: 4rem 5%;
+  }
+
+  .cta-conteudo h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-conteudo p {
+    max-width: 100%;
+  }
+
+  .cta-botoes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Ajustes do Rodapé para celular */
+  .rodape-grid {
+    grid-template-columns: 1fr; /* Força todas as colunas a ocuparem 100% do espaço */
+    gap: 2rem;
+  }
+
+  .rodape-coluna.marca p {
+    max-width: 100%;
+  }
+
+  .rodape-base {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .rodape-tags {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-illustration {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .mockup-card {
+    margin: 0 auto; 
+    max-width: 90%; 
+    padding: 1.5rem; 
+  }
+
+  .hero-illustration div[style*="height: 420px"] {
+    height: 300px !important; 
+  }
+}
