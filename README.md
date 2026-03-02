@@ -31,7 +31,7 @@ O **GeoBike** é uma plataforma de economia compartilhada focada em mobilidade u
 
 1.  **Clone este repositório:**
     ```bash
-    git clone [https://github.com/TCC-CAS/tcc-2026-1-e-2-geobike.git](https://github.com/TCC-CAS/tcc-2026-1-e-2-geobike.git)
+    git clone https://github.com/TCC-CAS/tcc-2026-1-e-2-geobike.git
     ```
 
 2.  **Entre na pasta do projeto:**
