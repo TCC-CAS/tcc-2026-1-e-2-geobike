@@ -1,0 +1,40 @@
+/* ============ ESTILOS DA HOME ============ */
+.hero {
+  position: relative; max-width: 1280px; margin: 2rem auto 0;
+  padding: 3rem 2rem 4rem; display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center;
+}
+.hero-kicker {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--cream-soft); border: 1px solid var(--border);
+  padding: 0.45rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; color: var(--forest); margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-family: 'Fraunces', serif; font-weight: 900; font-size: clamp(2.6rem, 5.5vw, 4.5rem); line-height: 1.02; margin-bottom: 1.5rem;
+}
+.hero h1 em { font-style: italic; font-weight: 400; color: var(--terracotta); }
+.hero p.lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 520px; margin-bottom: 2rem; }
+
+.hero-cta-row { display: flex; gap: 1rem; margin-bottom: 2.5rem; }
+.btn-primary {
+  background: var(--ink); color: var(--cream); padding: 1rem 1.8rem; border-radius: 100px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem;
+}
+.btn-ghost { padding: 1rem 1.8rem; border-radius: 100px; font-weight: 600; border: 1.5px solid var(--ink); }
+
+.hero-trust { display: flex; gap: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.trust-item .num { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; display: block; line-height: 1; }
+.trust-item .lbl { font-size: 0.82rem; color: var(--ink-muted); }
+
+.hero-visual { position: relative; height: 520px; }
+.hero-card { position: absolute; background: var(--paper); border: 1.5px solid var(--border); border-radius: 20px; padding: 1rem; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+.hero-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; margin-bottom: 0.7rem; }
+.hero-card .price { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.1rem; }
+.hero-card .hood { font-size: 0.75rem; color: var(--ink-muted); }
+.hero-card-1 { width: 200px; top: 0; left: 0; transform: rotate(-4deg); z-index: 2; }
+.hero-card-2 { width: 220px; top: 60px; right: 20px; transform: rotate(3deg); z-index: 3; }
+.hero-card-3 { width: 180px; bottom: 40px; left: 80px; transform: rotate(5deg); z-index: 4; }
+.hero-card-4 { width: 170px; bottom: 0; right: 60px; transform: rotate(-6deg); z-index: 1; }
+
+/* ============ RESPONSIVIDADE ============ */
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; gap: 2rem; }
+}
