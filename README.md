@@ -1,10 +1,13 @@
 # Santo Desapego - Plataforma de Comércio Local
 
+> **Trabalho de Conclusão de Curso** | Bacharelado em Sistemas de Informação - SENAC
 
 ## 📌 Sobre o Projeto
 O **Santo Desapego** é um Sistema de Intermediação voltado para a economia compartilhada e o comércio local. O projeto visa facilitar a troca, venda e doação de itens entre usuários da mesma comunidade ou região, promovendo o consumo consciente e a circulação de bens parados.
 
-Este trabalho está sendo desenvolvido como **Trabalho de Conclusão de Curso (TCC)** para o curso de Bacharelado em Sistemas de Informação no **Centro Universitário Senac - Santo Amaro**.
+## 🎨 Design e Wireframes (Figma)
+O protótipo e os fluxos de usuário podem ser visualizados diretamente no Figma através do link abaixo:
+👉 [Projeto Santo Desapego no Figma](https://www.figma.com/design/dCPBASNwCdMsIpBvmW22EU/TCC---Grupo-11?node-id=13-1633&p=f&t=rXVQKNNMwDPULb80-0)
 
 ## 🎯 Objetivos
 - Facilitar a conexão entre compradores e vendedores locais.
@@ -12,7 +15,6 @@ Este trabalho está sendo desenvolvido como **Trabalho de Conclusão de Curso (T
 - Oferecer uma plataforma segura e intuitiva para intermediação de produtos.
 
 ## 💻 Tecnologias Utilizadas
-
 - **Frontend:** HTML, CSS, JavaScript (React / Vue)
 - **Backend:** Node.js / PHP
 - **Banco de Dados:** MySQL / PostgreSQL 
