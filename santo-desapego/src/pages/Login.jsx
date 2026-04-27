@@ -2,18 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
-/**
- * Tela de Login do Santo Desapego.
- * Usa as classes globais já definidas no CSS principal:
- *   .auth-container, .auth-visual, .auth-form-side, .login-card,
- *   .form-header, .input-group, .btn-login, .badge,
- *   .feature-list / .feature-item / .feature-icon / .feature-text
- *
- * As classes adicionais (polaroides, social-buttons etc.)
- * estão em Login.css.
- */
 const Login = () => {
-  // ---- Estado do formulário ----
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -33,18 +22,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-
-    // TODO: substituir pelo POST real para a API (back-end)
-    // Ex.: await fetch('/api/auth/login', { method:'POST', body: JSON.stringify(formData) })
     console.log('[Login] enviando:', formData);
-
     setTimeout(() => {
       setSubmitting(false);
       alert('Formulário válido — pronto para conectar ao back-end!');
     }, 700);
   };
 
-  // ---- Polaroides do painel verde (mesma vibe da landing) ----
   const polaroids = [
     {
       src: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80',
@@ -74,13 +58,14 @@ const Login = () => {
 
   return (
     <div className="login-page">
-      {/* ============ ANNOUNCEMENT BAR ============ */}
+
+      {/* ── Announcement ── */}
       <div className="announcement">
         🌱 Economia circular em Santo Amaro:{' '}
         <strong>já evitamos 2,4 toneladas</strong> de descarte neste mês.
       </div>
 
-      {/* ============ HEADER MINIMAL (sem busca, sem categorias) ============ */}
+      {/* ── Header ── */}
       <header className="site-header">
         <div className="nav-top auth-nav-top">
           <Link to="/" className="logo">
@@ -89,24 +74,21 @@ const Login = () => {
           </Link>
           <nav className="nav-actions">
             <Link to="/">Voltar para a home</Link>
-            <Link to="/cadastro" className="btn-sell">
-              + Criar conta
-            </Link>
+            <Link to="/cadastro" className="btn-sell">+ Criar conta</Link>
           </nav>
         </div>
       </header>
 
-      {/* ============ AUTH CONTAINER (1fr 1fr) ============ */}
+      {/* ── Layout 2 colunas ── */}
       <main className="auth-container">
 
-        {/* ======== LADO ESQUERDO — VISUAL ======== */}
+        {/* ════ PAINEL ESQUERDO ════ */}
         <aside className="auth-visual">
-          {/* Selo "100% grátis pra anunciar" */}
+
           <div className="auth-stamp" aria-hidden="true">
             100%<br />grátis<br />pra anunciar
           </div>
 
-          {/* Polaroides de produtos flutuantes */}
           <div className="polaroids" aria-hidden="true">
             {polaroids.map((p, i) => (
               <article key={i} className={`polaroid polaroid-${i + 1}`}>
@@ -118,13 +100,11 @@ const Login = () => {
             ))}
           </div>
 
-          {/* Conteúdo de texto + stats */}
           <div className="auth-visual-foot">
             <span className="badge">
               <span className="badge-dot" />
               Comunidade ativa agora
             </span>
-
             <h2>
               Seu bairro tem <em>mais do que você imagina.</em>
             </h2>
@@ -132,7 +112,6 @@ const Login = () => {
               Desapegos que viram novos começos. Conecte-se com vizinhos,
               encontre raridades e contribua com a economia local.
             </p>
-
             <div className="auth-stats">
               <div className="stat">
                 <span className="num">4.800+</span>
@@ -150,20 +129,17 @@ const Login = () => {
           </div>
         </aside>
 
-        {/* ======== LADO DIREITO — FORMULÁRIO ======== */}
+        {/* ════ PAINEL DIREITO ════ */}
         <section className="auth-form-side">
           <div className="login-card">
+
             <div className="form-header">
               <Link to="/" className="logo auth-logo">
                 <span className="logo-mark">SD</span>
                 Santo <em>Desapego</em>
               </Link>
-              <h1>
-                Entrar na sua <em>conta</em>
-              </h1>
-              <p className="form-sub">
-                Acesse para comprar, vender e favoritar itens
-              </p>
+              <h1>Entrar na sua <em>conta</em></h1>
+              <p className="form-sub">Acesse para comprar, vender e favoritar itens</p>
             </div>
 
             <form onSubmit={handleSubmit} noValidate>
@@ -231,7 +207,7 @@ const Login = () => {
                 </div>
               </div>
 
-              {/* Lembrar de mim + Esqueci a senha */}
+              {/* Lembrar / Esqueci */}
               <div className="form-options">
                 <label className="checkbox-row">
                   <input
@@ -242,17 +218,11 @@ const Login = () => {
                   />
                   <span>Lembrar de mim</span>
                 </label>
-                <a href="#esqueci" className="forgot-link">
-                  Esqueci minha senha
-                </a>
+                <a href="#esqueci" className="forgot-link">Esqueci minha senha</a>
               </div>
 
-              {/* Botão principal */}
-              <button
-                type="submit"
-                className="btn-login"
-                disabled={submitting}
-              >
+              {/* Submit */}
+              <button type="submit" className="btn-login" disabled={submitting}>
                 {submitting ? 'Entrando...' : (
                   <>
                     Entrar
@@ -268,7 +238,7 @@ const Login = () => {
                 <span>ou continue com</span>
               </div>
 
-              {/* Botões sociais */}
+              {/* Social */}
               <div className="social-buttons">
                 <button type="button" className="btn-social">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -293,15 +263,17 @@ const Login = () => {
               Ainda não tem conta?{' '}
               <Link to="/cadastro">Criar conta grátis</Link>
             </p>
+
           </div>
         </section>
 
       </main>
 
-      {/* ============ MINI FOOTER ============ */}
+      {/* ── Mini footer ── */}
       <footer className="auth-mini-footer">
         © 2026 Santo Desapego — Projeto acadêmico TCC · Centro Universitário Senac Santo Amaro
       </footer>
+
     </div>
   );
 };

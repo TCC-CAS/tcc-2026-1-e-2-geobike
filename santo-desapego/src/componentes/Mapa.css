@@ -1,0 +1,31 @@
+/* Mapa.css */
+
+.leaflet-wrapper {
+  position: relative;
+  z-index: 0;             
+  aspect-ratio: 4 / 3;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* Garante que os controles internos do Leaflet também fiquem contidos */
+.leaflet-wrapper .leaflet-pane,
+.leaflet-wrapper .leaflet-top,
+.leaflet-wrapper .leaflet-bottom {
+  z-index: 1 !important;
+}
+
+.leaflet-wrapper .leaflet-control-zoom {
+  z-index: 2 !important;
+}
+
+/* Esconde atribuição */
+.leaflet-control-attribution { display: none; }
